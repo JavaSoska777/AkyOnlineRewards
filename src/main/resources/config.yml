@@ -1,0 +1,141 @@
+# Настройки плагина
+settings:
+  check-on-startup: true
+  join-delay: 20
+  auto-check-interval: 60
+
+# Белый список разрешенных команд
+allowed-commands:
+  - "give"
+  - "eco"
+  - "say"
+  - "broadcast"
+  - "title"
+  - "effect"
+  - "money"
+  - "vault"
+  - "player"
+  - "experience"
+  - "xp"
+  - "msg"
+  - "tell"
+  - "mail"
+  - "kit"
+  - "warp"
+  - "home"
+  - "spawn"
+
+# Награды за онлайн
+milestones:
+  10:
+    console-commands:
+      - "say Поздравляем %player% с достижением 10 онлайна!"
+      - "give %player% diamond 1"
+    player-commands: []
+    messages:
+      - "&aДостигнут онлайн &e10 &aигроков!"
+      - "&fВы получили алмаз!"
+    actionbar: "&eОнлайн: &a%online% &f- вы получили награду!"
+    title:
+      enabled: true
+      title: "&a&lНАГРАДА"
+      subtitle: "&fЗа онлайн &e%online%"
+      fade-in: 10
+      stay: 40
+      fade-out: 10
+    bossbar:
+      enabled: true
+      message: "&aОнлайн %online% - всем спасибо!"
+      color: "GREEN"
+      duration: 5
+    sound:
+      enabled: true
+      sound: "ENTITY_PLAYER_LEVELUP"
+      volume: 1.0
+      pitch: 1.0
+
+  25:
+    console-commands:
+      - "say Отлично! %online% игроков на сервере!"
+      - "give %player% emerald 2"
+      - "eco give %player% 500"
+    player-commands: []
+    messages:
+      - "&6Достигнут онлайн &e%online% &6игроков!"
+      - "&fВы получили изумруды и деньги!"
+    actionbar: "&6Онлайн: &e%online% &f- отличная работа!"
+    title:
+      enabled: true
+      title: "&6&lВЕЛИКОЛЕПНО"
+      subtitle: "&fОнлайн &e%online% &fигроков!"
+      fade-in: 15
+      stay: 50
+      fade-out: 15
+    bossbar:
+      enabled: true
+      message: "&6Онлайн %online% - сервер растет!"
+      color: "GOLD"
+      duration: 7
+    sound:
+      enabled: true
+      sound: "ENTITY_FIREWORK_ROCKET_BLAST"
+      volume: 1.2
+      pitch: 1.0
+
+  50:
+    console-commands:
+      - "say НЕВЕРОЯТНО! %online% игроков онлайн!"
+      - "give %player% diamond_block 1"
+      - "eco give %player% 1000"
+    player-commands: []
+    messages:
+      - "&cДостигнут онлайн &e%online% &cигроков!"
+      - "&fВы получили алмазный блок и крупную сумму!"
+    actionbar: "&cОнлайн: &e%online% &f- это рекорд!"
+    title:
+      enabled: true
+      title: "&c&lРЕКОРД"
+      subtitle: "&fОнлайн &e%online% &fигроков!"
+      fade-in: 20
+      stay: 60
+      fade-out: 20
+    bossbar:
+      enabled: true
+      message: "&cРЕКОРДНЫЙ ОНЛАЙН %online%!"
+      color: "RED"
+      duration: 10
+    sound:
+      enabled: true
+      sound: "ENTITY_ENDER_DRAGON_GROWL"
+      volume: 1.5
+      pitch: 0.8
+
+  100:
+    console-commands:
+      - "say ВОЛШЕБСТВО! %online% игроков на сервере!"
+      - "give %player% nether_star 1"
+      - "eco give %player% 5000"
+      - "give %player% diamond 64"
+    player-commands: []
+    messages:
+      - "&b&lВОЛШЕБСТВО! &e%online% &b&lигроков онлайн!"
+      - "&fВы получили звезду Нижнего мира и много наград!"
+      - "&#FFAA00Спасибо всем игрокам за активность!"
+    actionbar: "&#FFAA00Онлайн: &e%online% &f- это просто волшебно!"
+    title:
+      enabled: true
+      title: "&b&lВОЛШЕБСТВО"
+      subtitle: "&#FFAA00Онлайн &e%online% &#FFAA00игроков!"
+      fade-in: 25
+      stay: 80
+      fade-out: 25
+    bossbar:
+      enabled: true
+      message: "&#FFAA00ВОЛШЕБНЫЙ ОНЛАЙН %online%!"
+      color: "BLUE"
+      duration: 15
+    sound:
+      enabled: true
+      sound: "ENTITY_WITHER_SPAWN"
+      volume: 2.0
+      pitch: 1.0

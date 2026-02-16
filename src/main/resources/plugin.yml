@@ -1,0 +1,22 @@
+name: AkyOnlineReward
+version: '${project.version}'
+main: ru.akydev.akyonlinereward.AkyOnlineReward
+api-version: '1.16'
+author: AkyDev
+description: Выдает награды игрокам при достижении определенного количества онлайн-игроков
+website: https://github.com/akydev
+
+commands:
+  akyonline:
+    description: Основная команда плагина
+    aliases: [aon]
+    usage: /akyonline <reload|test|info|list>
+    permission: akyonline.admin
+
+permissions:
+  akyonline.admin:
+    description: Доступ к административным командам
+    default: op
+  akyonline.receive:
+    description: Получение наград
+    default: true
